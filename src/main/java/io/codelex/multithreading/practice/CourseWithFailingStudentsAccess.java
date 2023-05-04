@@ -1,20 +1,20 @@
 package io.codelex.multithreading.practice;
 
-import com.github.javafaker.Faker;
+//import com.github.javafaker.Faker;
 import io.codelex.NoCodeWrittenException;
 
 import java.util.List;
 
 public class CourseWithFailingStudentsAccess {
-    private static final Faker faker = Faker.instance();
+//    private static final Faker faker = Faker.instance();
 
     public static void main(String[] args) {
         throw new NoCodeWrittenException();
     }
 
-    String findNewStudent() {
-        return faker.name().fullName();
-    }
+//    String findNewStudent() {
+//        return faker.name().fullName();
+//    }
 
     static class StudentsList {
 
