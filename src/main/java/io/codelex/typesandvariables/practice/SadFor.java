@@ -11,8 +11,7 @@ public class SadFor {
 //fixme
         for (int i = 0; i < 10; i++) {
             if (Math.sqrt(i) > 2.5)
-                break;
-            return i;
+                return i;
         }
         throw new NoCodeWrittenException();
     }
