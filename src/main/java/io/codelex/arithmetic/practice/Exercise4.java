@@ -1,7 +1,7 @@
 package io.codelex.arithmetic.practice;
 
 public class Exercise4 {
-    private static void Product1ToN() {
+    private static void product1ToN() {
         int factorial = 1;
         for (int i = factorial; i <= 10; i++) {
             factorial *= i;
@@ -10,6 +10,6 @@ public class Exercise4 {
     }
 
     public static void main(String[] args) {
-        Product1ToN();
+        product1ToN();
     }
 }
