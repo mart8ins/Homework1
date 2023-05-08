@@ -1,7 +1,7 @@
 package io.codelex.arithmetic.practice;
 
 public class Exercise2 {
-    private static void CheckOddEven(int num) {
+    private static void checkOddEven(int num) {
         if (num % 2 == 0) {
             System.out.println("Even number");
         } else {
@@ -12,6 +12,6 @@ public class Exercise2 {
     }
 
     public static void main(String[] args) {
-        CheckOddEven(8);
+        checkOddEven(8);
     }
 }
