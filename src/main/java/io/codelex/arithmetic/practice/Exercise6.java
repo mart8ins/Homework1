@@ -3,11 +3,11 @@ package io.codelex.arithmetic.practice;
 public class Exercise6 {
     private static void cozaLozaWoza() {
         for (int i = 1; i <= 110; i++) {
-            for (int j = 1; j <= 110; j += 11) {
-                if (j == i) {
-                    System.out.println("");
-                }
+
+            if (i % 11 == 1) {
+                System.out.println("");
             }
+
             if (i % 3 == 0 && i % 5 == 0) {
                 System.out.print("CozaLoza ");
             } else if (i % 3 == 0) {
