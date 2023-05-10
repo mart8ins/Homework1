@@ -10,16 +10,17 @@ public class PositiveNegativeNumber {
         System.out.print("Input number: ");
         int input = in.nextInt();
 
-        /*
-        fixme
-        if (?){
+
+//        fixme
+
+        if (input > 0) {
             System.out.println("Number is positive");
-        } else if (?) {
+        } else if (input < 0) {
             System.out.println("Number is negative");
         } else {
             System.out.println("Number is zero");
         }
-        */
+
     }
 
 }

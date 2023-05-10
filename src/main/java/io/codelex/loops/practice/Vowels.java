@@ -6,19 +6,18 @@ public class Vowels {
     public static void main(String[] args) {
         char[] vowels = {'a', 'e', 'i', 'o', 'u'};
 
-        /*
-        todo - use for
-        for (?) {
+
+//        todo - use for
+        for (int i = 0; i < vowels.length; i++) {
             System.out.println(vowels[i]);
         }
-        */
 
-        /*
-        todo - use foreach
-        for (?) {
+
+//        todo - use foreach
+        for (char vowel : vowels) {
             System.out.println(vowel);
         }
-        */
+
     }
 
 }
