@@ -21,6 +21,12 @@ public class Account {
         return balance;
     }
 
+    public void sendMoney(Account account, double amount) {
+        this.balance -= amount;
+        account.deposit(amount);
+        System.out.println("* Successful transfer: " + this.owner + " sent " + amount + " to " + account.owner);
+    }
+
     @Override
     public String toString() {
         return owner + " balance: " + balance;
