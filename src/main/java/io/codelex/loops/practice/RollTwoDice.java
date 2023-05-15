@@ -10,7 +10,6 @@ public class RollTwoDice {
         int desiredSum;
         int firstRoll;
         int secondRoll;
-        boolean isMatch = false;
 
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
@@ -22,10 +21,7 @@ public class RollTwoDice {
             firstRoll = random.nextInt(diceOptions) + 1;
             secondRoll = random.nextInt(diceOptions) + 1;
             System.out.println(firstRoll + " + " + secondRoll + " = " + (firstRoll + secondRoll));
-            if (firstRoll + secondRoll == desiredSum) {
-                isMatch = true;
-            }
-        } while (!isMatch);
+        } while (firstRoll + secondRoll != desiredSum);
     }
 
     public static void main(String[] args) {
