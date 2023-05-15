@@ -33,51 +33,18 @@ public class Exercise5 {
             }
 
             switch (input) {
-                case "a":
-                case "b":
-                case "c":
-                    dialedNumberSwitch += 2;
-                    break;
-                case "d":
-                case "e":
-                case "f":
-                    dialedNumberSwitch += 3;
-                    break;
-                case "g":
-                case "h":
-                case "i":
-                    dialedNumberSwitch += 4;
-                    break;
-                case "j":
-                case "k":
-                case "l":
-                    dialedNumberSwitch += 5;
-                    break;
-                case "m":
-                case "n":
-                case "o":
-                    dialedNumberSwitch += 6;
-                    break;
-                case "p":
-                case "q":
-                case "r":
-                case "s":
-                    dialedNumberSwitch += 7;
-                    break;
-                case "t":
-                case "u":
-                case "v":
-                    dialedNumberSwitch += 8;
-                    break;
-                case "w":
-                case "x":
-                case "y":
-                case "z":
-                    dialedNumberSwitch += 9;
-                    break;
-                default:
+                case "a", "b", "c" -> dialedNumberSwitch += 2;
+                case "d", "e", "f" -> dialedNumberSwitch += 3;
+                case "g", "h", "i" -> dialedNumberSwitch += 4;
+                case "j", "k", "l" -> dialedNumberSwitch += 5;
+                case "m", "n", "o" -> dialedNumberSwitch += 6;
+                case "p", "q", "r", "s" -> dialedNumberSwitch += 7;
+                case "t", "u", "v" -> dialedNumberSwitch += 8;
+                case "w", "x", "y", "z" -> dialedNumberSwitch += 9;
+                default -> {
                     dialedNumberSwitch += "_ _ _ _ _";
                     System.out.print("Wrong button...");
+                }
             }
 
             System.out.println("Dialed number if: " + dialedNumberIf);
