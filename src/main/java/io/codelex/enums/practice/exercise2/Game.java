@@ -20,7 +20,10 @@ public class Game {
 
     public static String getWinner(String userWeapon, String computerWeapon) {
         gamesPlayed++;
-        if (userWeapon.equals(Weapons.S.getWeapon()) && computerWeapon.equals(Weapons.S.getWeapon())) {
+        if (userWeapon.equals(Weapons.S.getWeapon()) && computerWeapon.equals(Weapons.S.getWeapon()) ||
+                userWeapon.equals(Weapons.T.getWeapon()) && computerWeapon.equals(Weapons.T.getWeapon()) ||
+                userWeapon.equals(Weapons.P.getWeapon()) && computerWeapon.equals(Weapons.P.getWeapon())
+        ) {
             tieGame++;
             return "Its a tie! Both players choose " + userWeapon;
         }
