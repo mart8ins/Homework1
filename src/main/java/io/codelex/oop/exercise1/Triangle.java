@@ -14,12 +14,12 @@ public class Triangle extends Shape {
     }
 
     @Override
-    public BigDecimal getArea() {
-        return this.width.multiply(this.height).divide(new BigDecimal(2));
+    public BigDecimal getArea(ICalculate fn) {
+        return fn.calculate(this.width, this.height);
     }
 
     @Override
-    public BigDecimal getPerimeter() {
-        return this.height.add(this.height).add(this.width);
+    public BigDecimal getPerimeter(ICalculate fn) {
+        return fn.calculate(this.width, this.height);
     }
 }

@@ -15,12 +15,12 @@ public class Rectangle extends Shape {
     }
 
     @Override
-    public BigDecimal getArea() {
-        return this.width.multiply(this.height);
+    public BigDecimal getArea(ICalculate fn) {
+        return fn.calculate(this.width, this.height);
     }
 
     @Override
-    public BigDecimal getPerimeter() {
-        return this.width.add(this.height).multiply(new BigDecimal(2));
+    public BigDecimal getPerimeter(ICalculate fn) {
+        return fn.calculate(this.width, this.height);
     }
 }

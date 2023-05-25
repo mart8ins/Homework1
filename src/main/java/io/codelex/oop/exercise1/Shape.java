@@ -13,9 +13,9 @@ public abstract class Shape {
         return this.numSides;
     }
 
-    public abstract BigDecimal getArea();
+    public abstract BigDecimal getArea(ICalculate fn);
 
-    public abstract BigDecimal getPerimeter();
+    public abstract BigDecimal getPerimeter(ICalculate fn);
 
 
 }
