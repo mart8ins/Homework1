@@ -13,12 +13,12 @@ public class Rectangle extends Shape {
 
 
     @Override
-    BigDecimal calculatePerimeter() {
+    public BigDecimal calculatePerimeter() {
         return xSide.add(ySide).multiply(new BigDecimal(2));
     }
 
     @Override
-    BigDecimal calculateArea() {
+    public BigDecimal calculateArea() {
         return xSide.multiply(ySide);
     }
 }

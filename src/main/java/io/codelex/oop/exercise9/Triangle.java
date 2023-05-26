@@ -13,12 +13,12 @@ public class Triangle extends Shape {
     }
 
     @Override
-    BigDecimal calculatePerimeter() {
+    public BigDecimal calculatePerimeter() {
         return height.add(height).add(base);
     }
 
     @Override
-    BigDecimal calculateArea() {
+    public BigDecimal calculateArea() {
         return height.multiply(base).divide(new BigDecimal(2));
     }
 }
