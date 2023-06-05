@@ -240,6 +240,7 @@ public class StreamsExerciseTest {
     @Test
     public void shouldGenerateFirstPrimeNumbers() {
         List<Integer> primeNumbers = StreamsExercise.generateFirst10PrimeNumbers();
+        System.out.println(primeNumbers);
         assertThat(primeNumbers, contains(2, 3, 5, 7, 11, 13, 17, 19, 23, 29));
     }
 
