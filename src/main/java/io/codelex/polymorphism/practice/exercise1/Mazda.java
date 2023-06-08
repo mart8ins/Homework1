@@ -1,7 +1,7 @@
 package io.codelex.polymorphism.practice.exercise1;
 
-public class Audi implements Car {
-    private String name = "Audi";
+public class Mazda implements Car {
+    private String name = "Mazda";
     private Integer currentSpeed = 0;
 
     public String getName() {
@@ -13,15 +13,18 @@ public class Audi implements Car {
     }
 
     public void speedUp() {
-        currentSpeed += 10;
+        currentSpeed += 5;
     }
 
     public void slowDown() {
-        currentSpeed -= 10;
+        currentSpeed -= 5;
     }
 
     public String showCurrentSpeed() {
         return currentSpeed.toString();
     }
 
+    public void useNitrousOxideEngine() {
+        currentSpeed = currentSpeed + 25;
+    }
 }

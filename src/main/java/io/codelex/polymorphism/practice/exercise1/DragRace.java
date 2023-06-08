@@ -1,5 +1,7 @@
 package io.codelex.polymorphism.practice.exercise1;
 
+import java.util.*;
+
 /**
  * Take a look at the cars in this package.
  * 1. Extract common behaviour to an interface called Car, and use it in the all classes.
@@ -13,6 +15,24 @@ package io.codelex.polymorphism.practice.exercise1;
 public class DragRace {
 
     public static void main(String[] args) {
+        List<Car> cars = new ArrayList<>();
+        cars.add(new Audi());
+        cars.add(new Bmw());
+        cars.add(new Honda());
+        cars.add(new Lexus());
+        cars.add(new Mazda());
+        cars.add(new Tesla());
 
+        for (int i = 0; i < 10; i++) {
+            for (Car car : cars) {
+                car.speedUp();
+                if (i == 3) {
+                    car.useNitrousOxideEngine();
+                }
+            }
+        }
+
+        Car fastestCar = cars.stream().max(Comparator.comparing(Car::getCurrentSpeed)).orElseThrow(NoSuchElementException::new);
+        System.out.println("Fastest car is " + fastestCar.getName() + " with speed " + fastestCar.getCurrentSpeed());
     }
 }
