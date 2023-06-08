@@ -7,6 +7,7 @@ public class AdApp {
         c.addAdvert(new Hoarding(500, 7, 200));
         c.addAdvert(new NewspaperAd(0, 30, 20));
         c.addAdvert(new TVAd(50000, 1000, 30, true));
+        c.addAdvert(new Poster(100, 20, 25, 2000, 4));
         System.out.println(c);
     }
 }
