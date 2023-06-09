@@ -24,4 +24,8 @@ public class Combiner<E, S> {
     public String combineTwoItems(E first, S second) {
         return "First item: " + first.toString() + "; Second item: " + second.toString();
     }
+
+    public String result() {
+        return combineTwoItems(first, second);
+    }
 }

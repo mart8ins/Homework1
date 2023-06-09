@@ -5,10 +5,10 @@ import java.math.BigDecimal;
 public class Main {
     public static void main(String[] args) {
         Combiner combiner = new Combiner<>(4, 4);
-        System.out.println(combiner.combineTwoItems(combiner.getFirst(), combiner.getSecond()));
+        System.out.println(combiner.result());
 
         Combiner combiner1 = new Combiner<>("Hello", "World");
-        System.out.println(combiner1.combineTwoItems(combiner1.getFirst(), combiner1.getSecond()));
+        System.out.println(combiner1.result());
 
         Printer printer = new Printer(200L);
         printer.print();
