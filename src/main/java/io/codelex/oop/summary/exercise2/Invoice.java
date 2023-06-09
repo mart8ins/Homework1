@@ -8,9 +8,13 @@ public class Invoice {
     private double priceWithoutVat;
     private double priceWithVat;
 
-    public Invoice(Order order, int invoiceNumber) {
-        this.order = order;
-        this.invoiceNumber = invoiceNumber;
+    public Invoice(Order order, int invoiceNumber) throws WrongOrderException {
+        if (order.items.size() == 0) {
+            throw new WrongOrderException("Order is empty, please add items to order.");
+        } else {
+            this.order = order;
+            this.invoiceNumber = invoiceNumber;
+        }
     }
 
     public void send() {
