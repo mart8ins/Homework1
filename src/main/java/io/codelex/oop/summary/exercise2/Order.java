@@ -5,9 +5,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Order {
-    List<Item> items = new ArrayList<>();
+    List<SellableThing> items = new ArrayList<>();
 
-    public void addItem(Item item) throws BadFoodException {
+    public void addItem(SellableThing item) throws BadFoodException {
         if (item instanceof FoodItem) {
             if (LocalDate.now().isAfter(((FoodItem) item).getBestBefore())) {
                 throw new BadFoodException("This food item is expired.");
@@ -17,7 +17,7 @@ public class Order {
     }
 
     public void showItems() {
-        for (Item item : items) {
+        for (SellableThing item : items) {
             item.getFullInfo();
         }
     }

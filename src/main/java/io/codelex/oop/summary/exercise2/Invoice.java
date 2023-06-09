@@ -37,7 +37,7 @@ public class Invoice {
         details.append(invoiceStatusString + String.format("%s", " ".repeat(fullLine.length() - invoiceStatusString.length() - 2)) + "=\n");
 
         int c = 0;
-        for (Item item : order.items) {
+        for (SellableThing item : order.items) {
             c++;
             String itemString = String.format("= %s. %s", c, item.getFullInfo());
             details.append(itemString + String.format("%s", " ".repeat(fullLine.length() - itemString.length() - 2)) + "=\n");

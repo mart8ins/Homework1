@@ -8,14 +8,18 @@ public class OrderProgram {
         ElectronicsItem electronic = new ElectronicsItem("Blender", 99, 800);
         HouseholdItem household = new HouseholdItem("Chair", 44, "Black");
 
+        ItemPacking itemPacking = new ItemPacking();
+
         Order order = new Order();
         try {
             order.addItem(food);
             order.addItem(electronic);
             order.addItem(household);
+            order.addItem(itemPacking);
 
             Invoice invoice = new Invoice(order, 1001);
             System.out.println(invoice.printInvoice());
+
         } catch (BadFoodException e) {
             System.out.println(e.getMessage());
         } catch (WrongOrderException e) {

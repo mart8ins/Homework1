@@ -1,9 +1,5 @@
 package io.codelex.oop.summary.exercise2;
 
-public interface Item {
-    String getName();
+public interface Item extends SellableThing {
 
-    double getPrice();
-
-    String getFullInfo();
 }
