@@ -1,6 +1,8 @@
 package io.codelex.collections.practice.lists;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 @SuppressWarnings("Duplicates")
@@ -18,9 +20,12 @@ public class ArrayListExercise8 {
         System.out.println("List before sort: " + colors);
 
         //TODO: Sort array list
-        //Collections....
-
+        Collections.sort(colors);
         System.out.println("List after sort: " + colors);
+
+        Comparator<String> reverseCompare = Comparator.reverseOrder();
+        Collections.sort(colors, reverseCompare);
+        System.out.println("List after reverse sort: " + colors);
     }
 
 }

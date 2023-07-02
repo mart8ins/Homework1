@@ -17,9 +17,10 @@ public class ArrayListExercise2 {
 
         /*
         fixme
-        for (...) {
-          System.out.println(element);
+         */
+        for (String element : colors) {
+            System.out.println(element);
         }
-        */
+
     }
 }
